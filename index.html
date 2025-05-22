@@ -1,70 +1,16 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Voice Chat</title>
-    <style>
-        body {
-            font-family: Arial;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px
-        }
-
-        #chat-box {
-            height: 300px;
-            border: 1px solid #ccc;
-            padding: 10px;
-            overflow-y: scroll;
-            margin-bottom: 10px
-        }
-
-        #message-input {
-            width: 70%;
-            padding: 8px
-        }
-
-        button {
-            padding: 8px 15px;
-            background: #4CAF50;
-            color: #fff;
-            border: none;
-            cursor: pointer
-        }
-
-        button:disabled {
-            background: #888;
-            cursor: not-allowed
-        }
-
-        .user-message {
-            text-align: right;
-            color: blue;
-            margin: 5px
-        }
-
-        .ai-message {
-            text-align: left;
-            color: green;
-            margin: 5px
-        }
-
-        .system-message {
-            text-align: center;
-            color: gray;
-            margin: 5px
-        }
-    </style>
 </head>
-
 <body>
     <h1>AI Voice Chat</h1>
     <div id="chat-box"></div>
-    <input id="message-input" placeholder="Type your message…" />
+    <input id="message-input" placeholder="Type your message…">
     <button id="send-btn">Send</button>
     <button id="stop-btn">Stop Voice</button>
-
     <script>
         const clientId = "chat_interface";
         const socket = new WebSocket(`ws://localhost:8000/ws/${clientId}`);
@@ -137,5 +83,4 @@
         });
     </script>
 </body>
-
 </html>
