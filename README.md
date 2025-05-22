@@ -22,7 +22,7 @@ source venv/bin/activate  # Linux/Mac
 pip install -r requirements.txt
 ```
 
-4. Create `.env` file with your OpenAI API key:
+4. Create `.env` file in project root with your OpenAI API key:
 ```env
 OPENAI_API_KEY=your_key_here
 ```
