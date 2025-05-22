@@ -45,12 +45,6 @@ Access the web interface at:
 | Integration Tests | `pytest tests/ -m integration` |
 | With Coverage | `pytest --cov=app tests/` |
 
-## 🔌 Key Endpoints
-
-- Web Interface: `GET /`
-- WebSocket: `ws://localhost:8000/ws/{client_id}`
-- Static Files: `/static`
-
 ## ⚙️ Environment Variables
 
 | Variable | Required | Default | Purpose |
